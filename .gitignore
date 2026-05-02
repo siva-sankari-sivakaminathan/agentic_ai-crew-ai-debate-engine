@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.DS_Store
+*.egg-info/
+dist/
+build/
+
+# Generated debate outputs (keep folder via .gitkeep)
+outputs/*.json
