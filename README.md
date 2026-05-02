@@ -4,11 +4,19 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![CrewAI](https://img.shields.io/badge/CrewAI-1.10.1-7C3AED)](https://github.com/crewAIInc/crewAI)
 
+<p align="center">
+  <img src="assets/readme-banner.png" alt="CrewAI Debate Engine — multi-agent courtroom simulation" width="92%">
+</p>
+
 A **multi-agent courtroom debate** demo built with **CrewAI**. Five roles—**evidence analyst**, **prosecutor**, **defense**, **fact checker**, and **judge**—run in a **sequential** pipeline over synthetic legal-style case briefs. Each stage writes **structured JSON** under `outputs/`; the judge produces **scores**, a **winner**, and **reasoning**. A small **Gradio leaderboard** reads cumulative results from `debate_results.json`.
 
 ---
 
 ## What it does
+
+<p align="center">
+  <img src="assets/readme-workflow.png" alt="Pipeline: evidence, prosecution, defense, fact check, verdict" width="92%">
+</p>
 
 - **Cases 1–4:** Preloaded motions (AI hiring discrimination, copyright, autonomous vehicle liability, content moderation).
 - **Model selection:** Prosecutor and defense can be sampled from a pool of configured LiteLLM models (default: OpenAI IDs such as `gpt-4o-mini` when `OPENAI_API_KEY` is set). Judge, evidence analyst, and fact checker use configurable defaults.
